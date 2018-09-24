@@ -1,0 +1,783 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSetPrincipal" targetNamespace="http://tempuri.org/DataSetPrincipal.xsd" xmlns:mstns="http://tempuri.org/DataSetPrincipal.xsd" xmlns="http://tempuri.org/DataSetPrincipal.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="1" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="EscuelitaConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="EscuelitaConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Principal.Properties.Settings.GlobalReference.Default.EscuelitaConnectionString" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="EscuelaConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="EscuelaConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Principal.Properties.Settings.GlobalReference.Default.EscuelaConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="AlumnoTableAdapter" GeneratorDataComponentClassName="AlumnoTableAdapter" Name="Alumno" UserDataComponentName="AlumnoTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="EscuelitaConnectionString (Settings)" DbObjectName="Escuelita.dbo.Alumno" DbObjectType="Table" GenerateMethods="Get" GenerateShortCommands="false" GeneratorGetMethodName="GetDataListaAlumnos" GetMethodModifier="Public" GetMethodName="GetDataListaAlumnos" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetDataListaAlumnos" UserSourceName="GetDataListaAlumnos">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        Alumno.*
+FROM            Alumno</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="carne" DataSetColumn="carne" />
+              <Mapping SourceColumn="Id_Municipio" DataSetColumn="Id_Municipio" />
+              <Mapping SourceColumn="Nombre1" DataSetColumn="Nombre1" />
+              <Mapping SourceColumn="Nombre2" DataSetColumn="Nombre2" />
+              <Mapping SourceColumn="Apellido1" DataSetColumn="Apellido1" />
+              <Mapping SourceColumn="Apellido2" DataSetColumn="Apellido2" />
+              <Mapping SourceColumn="Genero" DataSetColumn="Genero" />
+              <Mapping SourceColumn="TelefonoCasa" DataSetColumn="TelefonoCasa" />
+              <Mapping SourceColumn="FechaNac" DataSetColumn="FechaNac" />
+              <Mapping SourceColumn="NombreResponsable" DataSetColumn="NombreResponsable" />
+              <Mapping SourceColumn="DPIResponsable" DataSetColumn="DPIResponsable" />
+              <Mapping SourceColumn="Id_EstadoAlumno" DataSetColumn="Id_EstadoAlumno" />
+              <Mapping SourceColumn="Direccion" DataSetColumn="Direccion" />
+              <Mapping SourceColumn="MatriculaEducacion" DataSetColumn="MatriculaEducacion" />
+              <Mapping SourceColumn="Responsable2" DataSetColumn="Responsable2" />
+              <Mapping SourceColumn="CelularResp" DataSetColumn="CelularResp" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="NotaTableAdapter" GeneratorDataComponentClassName="NotaTableAdapter" Name="Nota" UserDataComponentName="NotaTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="EscuelitaConnectionString (Settings)" DbObjectName="Escuelita.dbo.Nota" DbObjectType="Table" GenerateMethods="Get" GenerateShortCommands="false" GeneratorGetMethodName="GetDataListaNotas" GetMethodModifier="Public" GetMethodName="GetDataListaNotas" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetDataListaNotas" UserSourceName="GetDataListaNotas">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        Nota.*
+FROM            Nota</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Id_Nota" DataSetColumn="Id_Nota" />
+              <Mapping SourceColumn="Nota" DataSetColumn="Nota" />
+              <Mapping SourceColumn="Zona" DataSetColumn="Zona" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="UnidadTableAdapter" GeneratorDataComponentClassName="UnidadTableAdapter" Name="Unidad" UserDataComponentName="UnidadTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="EscuelitaConnectionString (Settings)" DbObjectName="Escuelita.dbo.Unidad" DbObjectType="Table" GenerateMethods="Get" GenerateShortCommands="false" GeneratorGetMethodName="GetDataListaUnidades" GetMethodModifier="Public" GetMethodName="GetDataListaUnidades" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetDataListaUnidades" UserSourceName="GetDataListaUnidades">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        Unidad.*
+FROM            Unidad</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Id_Unidad" DataSetColumn="Id_Unidad" />
+              <Mapping SourceColumn="Unidad" DataSetColumn="Unidad" />
+              <Mapping SourceColumn="PromedioGeneral" DataSetColumn="PromedioGeneral" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="UsuarioTableAdapter" GeneratorDataComponentClassName="UsuarioTableAdapter" Name="Usuario" UserDataComponentName="UsuarioTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="EscuelitaConnectionString (Settings)" DbObjectName="Escuelita.dbo.Usuario" DbObjectType="Table" GenerateMethods="Get" GenerateShortCommands="false" GeneratorGetMethodName="GetDataListaUsuarios" GetMethodModifier="Public" GetMethodName="GetDataListaUsuarios" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetDataListaUsuarios" UserSourceName="GetDataListaUsuarios">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        Usuario.*
+FROM            Usuario</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Id_Usuario" DataSetColumn="Id_Usuario" />
+              <Mapping SourceColumn="Nombre" DataSetColumn="Nombre" />
+              <Mapping SourceColumn="Contrasenia" DataSetColumn="Contrasenia" />
+              <Mapping SourceColumn="FechaCreacion" DataSetColumn="FechaCreacion" />
+              <Mapping SourceColumn="Id_TipoUsuario" DataSetColumn="Id_TipoUsuario" />
+              <Mapping SourceColumn="Id_RespSeg" DataSetColumn="Id_RespSeg" />
+              <Mapping SourceColumn="Id_Empleado" DataSetColumn="Id_Empleado" />
+              <Mapping SourceColumn="Id_EstadoUsuario" DataSetColumn="Id_EstadoUsuario" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="CursoTableAdapter" GeneratorDataComponentClassName="CursoTableAdapter" Name="Curso" UserDataComponentName="CursoTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="EscuelitaConnectionString (Settings)" DbObjectName="Escuelita.dbo.Curso" DbObjectType="Table" GenerateMethods="Get" GenerateShortCommands="false" GeneratorGetMethodName="GetDataListaCurso" GetMethodModifier="Public" GetMethodName="GetDataListaCurso" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetDataListaCurso" UserSourceName="GetDataListaCurso">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        Curso.*
+FROM            Curso</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Id_Curso" DataSetColumn="Id_Curso" />
+              <Mapping SourceColumn="NombreCurso" DataSetColumn="NombreCurso" />
+            </Mappings>
+            <Sources>
+              <DbSource ConnectionRef="EscuelitaConnectionString (Settings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="InsertaCurso" Modifier="Public" Name="InsertaCurso" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="InsertaCurso">
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>INSERT INTO Curso
+                         (Id_Curso, NombreCurso)
+VALUES        (@id,@nombre)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="id" ColumnName="Id_Curso" DataSourceName="Escuelita.dbo.Curso" DataTypeServer="nvarchar(50)" DbType="String" Direction="Input" ParameterName="@id" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumn="Id_Curso" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="nombre" ColumnName="NombreCurso" DataSourceName="Escuelita.dbo.Curso" DataTypeServer="nvarchar(50)" DbType="String" Direction="Input" ParameterName="@nombre" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumn="NombreCurso" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+              </DbSource>
+              <DbSource ConnectionRef="EscuelitaConnectionString (Settings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="UpdateCurso" Modifier="Public" Name="UpdateCurso" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy1" UserSourceName="UpdateCurso">
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>UPDATE       Curso
+SET                NombreCurso = @nombre
+WHERE        (Id_Curso = @id)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="nombre" ColumnName="NombreCurso" DataSourceName="Escuelita.dbo.Curso" DataTypeServer="nvarchar(50)" DbType="String" Direction="Input" ParameterName="@nombre" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumn="NombreCurso" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="id" ColumnName="Id_Curso" DataSourceName="Escuelita.dbo.Curso" DataTypeServer="nvarchar(50)" DbType="String" Direction="Input" ParameterName="@id" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumn="Id_Curso" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </Sources>
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="SeccionTableAdapter" GeneratorDataComponentClassName="SeccionTableAdapter" Name="Seccion" UserDataComponentName="SeccionTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="EscuelitaConnectionString (Settings)" DbObjectName="Escuelita.dbo.Seccion" DbObjectType="Table" GenerateMethods="Get" GenerateShortCommands="false" GeneratorGetMethodName="GetDataListaSeccion" GetMethodModifier="Public" GetMethodName="GetDataListaSeccion" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetDataListaSeccion" UserSourceName="GetDataListaSeccion">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        Id_Seccion, Seccion, CantidadAlumnos
+FROM            Seccion</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Id_Seccion" DataSetColumn="Id_Seccion" />
+              <Mapping SourceColumn="Seccion" DataSetColumn="Seccion" />
+              <Mapping SourceColumn="CantidadAlumnos" DataSetColumn="CantidadAlumnos" />
+            </Mappings>
+            <Sources>
+              <DbSource ConnectionRef="EscuelitaConnectionString (Settings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="InsertaSeccion" Modifier="Public" Name="InsertaSeccion" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="InsertaSeccion">
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>INSERT INTO Seccion
+                         (Id_Seccion, Seccion, CantidadAlumnos)
+VALUES        (@id,@nombre,@cantidad)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="id" ColumnName="Id_Seccion" DataSourceName="Escuela.dbo.Seccion" DataTypeServer="nvarchar(25)" DbType="String" Direction="Input" ParameterName="@id" Precision="0" ProviderType="NVarChar" Scale="0" Size="25" SourceColumn="Id_Seccion" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="nombre" ColumnName="Seccion" DataSourceName="Escuela.dbo.Seccion" DataTypeServer="nvarchar(5)" DbType="String" Direction="Input" ParameterName="@nombre" Precision="0" ProviderType="NVarChar" Scale="0" Size="5" SourceColumn="Seccion" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="cantidad" ColumnName="CantidadAlumnos" DataSourceName="Escuela.dbo.Seccion" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@cantidad" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="CantidadAlumnos" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+              </DbSource>
+              <DbSource ConnectionRef="EscuelitaConnectionString (Settings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="UpdateSeccion" Modifier="Public" Name="UpdateSeccion" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy1" UserSourceName="UpdateSeccion">
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>UPDATE       Seccion
+SET                Seccion = @nombre, CantidadAlumnos = @cantidad
+WHERE        (Id_Seccion = @id)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="nombre" ColumnName="Seccion" DataSourceName="Escuela.dbo.Seccion" DataTypeServer="nvarchar(5)" DbType="String" Direction="Input" ParameterName="@nombre" Precision="0" ProviderType="NVarChar" Scale="0" Size="5" SourceColumn="Seccion" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="cantidad" ColumnName="CantidadAlumnos" DataSourceName="Escuela.dbo.Seccion" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@cantidad" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="CantidadAlumnos" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="id" ColumnName="Id_Seccion" DataSourceName="Escuela.dbo.Seccion" DataTypeServer="nvarchar(25)" DbType="String" Direction="Input" ParameterName="@id" Precision="0" ProviderType="NVarChar" Scale="0" Size="25" SourceColumn="Id_Seccion" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </Sources>
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="EmpleadoTableAdapter" GeneratorDataComponentClassName="EmpleadoTableAdapter" Name="Empleado" UserDataComponentName="EmpleadoTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="EscuelitaConnectionString (Settings)" DbObjectName="Escuelita.dbo.Empleado" DbObjectType="Table" GenerateMethods="Get" GenerateShortCommands="false" GeneratorGetMethodName="GetDataListaEmpleado" GetMethodModifier="Public" GetMethodName="GetDataListaEmpleado" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetDataListaEmpleado" UserSourceName="GetDataListaEmpleado">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        Id_Empleado, Id_Municipio, Nombre1, Nombre2, Apellido1, Apellido2, DPI, Edad, Id_Estado, Direccion, Telefono, Celular
+FROM            Empleado</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Id_Empleado" DataSetColumn="Id_Empleado" />
+              <Mapping SourceColumn="Id_Municipio" DataSetColumn="Id_Municipio" />
+              <Mapping SourceColumn="Nombre1" DataSetColumn="Nombre1" />
+              <Mapping SourceColumn="Nombre2" DataSetColumn="Nombre2" />
+              <Mapping SourceColumn="Apellido1" DataSetColumn="Apellido1" />
+              <Mapping SourceColumn="Apellido2" DataSetColumn="Apellido2" />
+              <Mapping SourceColumn="DPI" DataSetColumn="DPI" />
+              <Mapping SourceColumn="Edad" DataSetColumn="Edad" />
+              <Mapping SourceColumn="Id_Estado" DataSetColumn="Id_Estado" />
+              <Mapping SourceColumn="Direccion" DataSetColumn="Direccion" />
+              <Mapping SourceColumn="Telefono" DataSetColumn="Telefono" />
+              <Mapping SourceColumn="Celular" DataSetColumn="Celular" />
+            </Mappings>
+            <Sources>
+              <DbSource ConnectionRef="EscuelitaConnectionString (Settings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="InsertaEmpleado" Modifier="Public" Name="InsertaEmpleado" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="InsertaEmpleado">
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>INSERT INTO Empleado
+                         (Id_Empleado, Id_Municipio, Nombre1, Nombre2, Apellido1, Apellido2, DPI, Edad, Id_Estado, Direccion, Telefono, Celular)
+VALUES        (@id,@muni,@nom1,@nom2,@ape1,@ape2,@dpi,@edad,@estado,@dir,@tel,@cel)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="id" ColumnName="Id_Empleado" DataSourceName="Escuela.dbo.Empleado" DataTypeServer="nvarchar(50)" DbType="String" Direction="Input" ParameterName="@id" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumn="Id_Empleado" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="muni" ColumnName="Id_Municipio" DataSourceName="Escuela.dbo.Empleado" DataTypeServer="nvarchar(20)" DbType="String" Direction="Input" ParameterName="@muni" Precision="0" ProviderType="NVarChar" Scale="0" Size="20" SourceColumn="Id_Municipio" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="nom1" ColumnName="Nombre1" DataSourceName="Escuela.dbo.Empleado" DataTypeServer="nvarchar(50)" DbType="String" Direction="Input" ParameterName="@nom1" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumn="Nombre1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="nom2" ColumnName="Nombre2" DataSourceName="Escuela.dbo.Empleado" DataTypeServer="nvarchar(50)" DbType="String" Direction="Input" ParameterName="@nom2" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumn="Nombre2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="ape1" ColumnName="Apellido1" DataSourceName="Escuela.dbo.Empleado" DataTypeServer="nvarchar(50)" DbType="String" Direction="Input" ParameterName="@ape1" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumn="Apellido1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="ape2" ColumnName="Apellido2" DataSourceName="Escuela.dbo.Empleado" DataTypeServer="nvarchar(50)" DbType="String" Direction="Input" ParameterName="@ape2" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumn="Apellido2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="dpi" ColumnName="DPI" DataSourceName="Escuela.dbo.Empleado" DataTypeServer="nvarchar(50)" DbType="String" Direction="Input" ParameterName="@dpi" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumn="DPI" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="edad" ColumnName="Edad" DataSourceName="Escuela.dbo.Empleado" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@edad" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="Edad" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="estado" ColumnName="Id_Estado" DataSourceName="Escuela.dbo.Empleado" DataTypeServer="nvarchar(50)" DbType="String" Direction="Input" ParameterName="@estado" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumn="Id_Estado" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="dir" ColumnName="Direccion" DataSourceName="Escuela.dbo.Empleado" DataTypeServer="nvarchar(100)" DbType="String" Direction="Input" ParameterName="@dir" Precision="0" ProviderType="NVarChar" Scale="0" Size="100" SourceColumn="Direccion" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="tel" ColumnName="Telefono" DataSourceName="Escuela.dbo.Empleado" DataTypeServer="nvarchar(15)" DbType="String" Direction="Input" ParameterName="@tel" Precision="0" ProviderType="NVarChar" Scale="0" Size="15" SourceColumn="Telefono" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="cel" ColumnName="Celular" DataSourceName="Escuela.dbo.Empleado" DataTypeServer="nvarchar(15)" DbType="String" Direction="Input" ParameterName="@cel" Precision="0" ProviderType="NVarChar" Scale="0" Size="15" SourceColumn="Celular" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+              </DbSource>
+              <DbSource ConnectionRef="EscuelitaConnectionString (Settings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="UpdateEmpleado" Modifier="Public" Name="UpdateEmpleado" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy1" UserSourceName="UpdateEmpleado">
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>UPDATE       Empleado
+SET                Id_Municipio = @muni, Nombre1 = @nom1, Nombre2 = @nom2, Apellido1 = @ape1, Apellido2 = @ape2, DPI = @dpi, Edad = @edad, Id_Estado = @estado, Direccion = @dir, Telefono = @tel, Celular = @cel
+WHERE        (Id_Empleado = @id)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="muni" ColumnName="Id_Municipio" DataSourceName="Escuela.dbo.Empleado" DataTypeServer="nvarchar(20)" DbType="String" Direction="Input" ParameterName="@muni" Precision="0" ProviderType="NVarChar" Scale="0" Size="20" SourceColumn="Id_Municipio" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="nom1" ColumnName="Nombre1" DataSourceName="Escuela.dbo.Empleado" DataTypeServer="nvarchar(50)" DbType="String" Direction="Input" ParameterName="@nom1" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumn="Nombre1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="nom2" ColumnName="Nombre2" DataSourceName="Escuela.dbo.Empleado" DataTypeServer="nvarchar(50)" DbType="String" Direction="Input" ParameterName="@nom2" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumn="Nombre2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="ape1" ColumnName="Apellido1" DataSourceName="Escuela.dbo.Empleado" DataTypeServer="nvarchar(50)" DbType="String" Direction="Input" ParameterName="@ape1" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumn="Apellido1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="ape2" ColumnName="Apellido2" DataSourceName="Escuela.dbo.Empleado" DataTypeServer="nvarchar(50)" DbType="String" Direction="Input" ParameterName="@ape2" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumn="Apellido2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="dpi" ColumnName="DPI" DataSourceName="Escuela.dbo.Empleado" DataTypeServer="nvarchar(50)" DbType="String" Direction="Input" ParameterName="@dpi" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumn="DPI" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="edad" ColumnName="Edad" DataSourceName="Escuela.dbo.Empleado" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@edad" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="Edad" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="estado" ColumnName="Id_Estado" DataSourceName="Escuela.dbo.Empleado" DataTypeServer="nvarchar(50)" DbType="String" Direction="Input" ParameterName="@estado" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumn="Id_Estado" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="dir" ColumnName="Direccion" DataSourceName="Escuela.dbo.Empleado" DataTypeServer="nvarchar(100)" DbType="String" Direction="Input" ParameterName="@dir" Precision="0" ProviderType="NVarChar" Scale="0" Size="100" SourceColumn="Direccion" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="tel" ColumnName="Telefono" DataSourceName="Escuela.dbo.Empleado" DataTypeServer="nvarchar(15)" DbType="String" Direction="Input" ParameterName="@tel" Precision="0" ProviderType="NVarChar" Scale="0" Size="15" SourceColumn="Telefono" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="cel" ColumnName="Celular" DataSourceName="Escuela.dbo.Empleado" DataTypeServer="nvarchar(15)" DbType="String" Direction="Input" ParameterName="@cel" Precision="0" ProviderType="NVarChar" Scale="0" Size="15" SourceColumn="Celular" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="id" ColumnName="Id_Empleado" DataSourceName="Escuela.dbo.Empleado" DataTypeServer="nvarchar(50)" DbType="String" Direction="Input" ParameterName="@id" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumn="Id_Empleado" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </Sources>
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="EstadoEmpleadoTableAdapter" GeneratorDataComponentClassName="EstadoEmpleadoTableAdapter" Name="EstadoEmpleado" UserDataComponentName="EstadoEmpleadoTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="EscuelitaConnectionString (Settings)" DbObjectName="Escuelita.dbo.EstadoEmpleado" DbObjectType="Table" GenerateMethods="Get" GenerateShortCommands="false" GeneratorGetMethodName="GetDataListaEstado" GetMethodModifier="Public" GetMethodName="GetDataListaEstado" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetDataListaEstado" UserSourceName="GetDataListaEstado">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        Id_Estado, Estado
+FROM            EstadoEmpleado</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Id_Estado" DataSetColumn="Id_Estado" />
+              <Mapping SourceColumn="Estado" DataSetColumn="Estado" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="GradoEscolarTableAdapter" GeneratorDataComponentClassName="GradoEscolarTableAdapter" Name="GradoEscolar" UserDataComponentName="GradoEscolarTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="EscuelitaConnectionString (Settings)" DbObjectName="Escuelita.dbo.GradoEscolar" DbObjectType="Table" GenerateMethods="Get" GenerateShortCommands="false" GeneratorGetMethodName="GetDataListaGrado" GetMethodModifier="Public" GetMethodName="GetDataListaGrado" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetDataListaGrado" UserSourceName="GetDataListaGrado">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        GradoEscolar.*
+FROM            GradoEscolar</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Id_Grado" DataSetColumn="Id_Grado" />
+              <Mapping SourceColumn="NombreGrado" DataSetColumn="NombreGrado" />
+              <Mapping SourceColumn="Anio" DataSetColumn="Anio" />
+              <Mapping SourceColumn="Id_Empleado" DataSetColumn="Id_Empleado" />
+              <Mapping SourceColumn="Id_Seccion" DataSetColumn="Id_Seccion" />
+            </Mappings>
+            <Sources>
+              <DbSource ConnectionRef="EscuelitaConnectionString (Settings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="InsertaGrado" Modifier="Public" Name="InsertaGrado" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="InsertaGrado">
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>INSERT INTO GradoEscolar
+                         (Id_Grado, NombreGrado, Anio, Id_Empleado, Id_Seccion)
+VALUES        (@id,@nombre,@anio,@emple,@seccion)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="id" ColumnName="Id_Grado" DataSourceName="Escuela.dbo.GradoEscolar" DataTypeServer="nvarchar(50)" DbType="String" Direction="Input" ParameterName="@id" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumn="Id_Grado" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="nombre" ColumnName="NombreGrado" DataSourceName="Escuela.dbo.GradoEscolar" DataTypeServer="nvarchar(50)" DbType="String" Direction="Input" ParameterName="@nombre" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumn="NombreGrado" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="anio" ColumnName="Anio" DataSourceName="Escuela.dbo.GradoEscolar" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@anio" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="Anio" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="emple" ColumnName="Id_Empleado" DataSourceName="Escuela.dbo.GradoEscolar" DataTypeServer="nvarchar(50)" DbType="String" Direction="Input" ParameterName="@emple" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumn="Id_Empleado" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="seccion" ColumnName="Id_Seccion" DataSourceName="Escuela.dbo.GradoEscolar" DataTypeServer="nvarchar(25)" DbType="String" Direction="Input" ParameterName="@seccion" Precision="0" ProviderType="NVarChar" Scale="0" Size="25" SourceColumn="Id_Seccion" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+              </DbSource>
+              <DbSource ConnectionRef="EscuelitaConnectionString (Settings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="UpdateGrado" Modifier="Public" Name="UpdateGrado" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy1" UserSourceName="UpdateGrado">
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>UPDATE       GradoEscolar
+SET                NombreGrado = @nombre, Anio = @anio, Id_Empleado = @emple, Id_Seccion = @seccion
+WHERE        (Id_Grado = @id)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="nombre" ColumnName="NombreGrado" DataSourceName="Escuela.dbo.GradoEscolar" DataTypeServer="nvarchar(50)" DbType="String" Direction="Input" ParameterName="@nombre" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumn="NombreGrado" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="anio" ColumnName="Anio" DataSourceName="Escuela.dbo.GradoEscolar" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@anio" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="Anio" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="emple" ColumnName="Id_Empleado" DataSourceName="Escuela.dbo.GradoEscolar" DataTypeServer="nvarchar(50)" DbType="String" Direction="Input" ParameterName="@emple" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumn="Id_Empleado" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="seccion" ColumnName="Id_Seccion" DataSourceName="Escuela.dbo.GradoEscolar" DataTypeServer="nvarchar(25)" DbType="String" Direction="Input" ParameterName="@seccion" Precision="0" ProviderType="NVarChar" Scale="0" Size="25" SourceColumn="Id_Seccion" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="id" ColumnName="Id_Grado" DataSourceName="Escuela.dbo.GradoEscolar" DataTypeServer="nvarchar(50)" DbType="String" Direction="Input" ParameterName="@id" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumn="Id_Grado" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSetPrincipal" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSetPrincipal" msprop:Generator_UserDSName="DataSetPrincipal">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Alumno" msprop:Generator_TableClassName="AlumnoDataTable" msprop:Generator_TableVarName="tableAlumno" msprop:Generator_RowChangedName="AlumnoRowChanged" msprop:Generator_TablePropName="Alumno" msprop:Generator_RowDeletingName="AlumnoRowDeleting" msprop:Generator_RowChangingName="AlumnoRowChanging" msprop:Generator_RowEvHandlerName="AlumnoRowChangeEventHandler" msprop:Generator_RowDeletedName="AlumnoRowDeleted" msprop:Generator_RowClassName="AlumnoRow" msprop:Generator_UserTableName="Alumno" msprop:Generator_RowEvArgName="AlumnoRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="carne" msprop:Generator_ColumnVarNameInTable="columncarne" msprop:Generator_ColumnPropNameInRow="carne" msprop:Generator_ColumnPropNameInTable="carneColumn" msprop:Generator_UserColumnName="carne">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Id_Municipio" msprop:Generator_ColumnVarNameInTable="columnId_Municipio" msprop:Generator_ColumnPropNameInRow="Id_Municipio" msprop:Generator_ColumnPropNameInTable="Id_MunicipioColumn" msprop:Generator_UserColumnName="Id_Municipio">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Nombre1" msprop:Generator_ColumnVarNameInTable="columnNombre1" msprop:Generator_ColumnPropNameInRow="Nombre1" msprop:Generator_ColumnPropNameInTable="Nombre1Column" msprop:Generator_UserColumnName="Nombre1">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Nombre2" msprop:Generator_ColumnVarNameInTable="columnNombre2" msprop:Generator_ColumnPropNameInRow="Nombre2" msprop:Generator_ColumnPropNameInTable="Nombre2Column" msprop:Generator_UserColumnName="Nombre2" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Apellido1" msprop:Generator_ColumnVarNameInTable="columnApellido1" msprop:Generator_ColumnPropNameInRow="Apellido1" msprop:Generator_ColumnPropNameInTable="Apellido1Column" msprop:Generator_UserColumnName="Apellido1">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Apellido2" msprop:Generator_ColumnVarNameInTable="columnApellido2" msprop:Generator_ColumnPropNameInRow="Apellido2" msprop:Generator_ColumnPropNameInTable="Apellido2Column" msprop:Generator_UserColumnName="Apellido2" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Genero" msprop:Generator_ColumnVarNameInTable="columnGenero" msprop:Generator_ColumnPropNameInRow="Genero" msprop:Generator_ColumnPropNameInTable="GeneroColumn" msprop:Generator_UserColumnName="Genero">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TelefonoCasa" msprop:Generator_ColumnVarNameInTable="columnTelefonoCasa" msprop:Generator_ColumnPropNameInRow="TelefonoCasa" msprop:Generator_ColumnPropNameInTable="TelefonoCasaColumn" msprop:Generator_UserColumnName="TelefonoCasa">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FechaNac" msprop:Generator_ColumnVarNameInTable="columnFechaNac" msprop:Generator_ColumnPropNameInRow="FechaNac" msprop:Generator_ColumnPropNameInTable="FechaNacColumn" msprop:Generator_UserColumnName="FechaNac" type="xs:dateTime" />
+              <xs:element name="NombreResponsable" msprop:Generator_ColumnVarNameInTable="columnNombreResponsable" msprop:Generator_ColumnPropNameInRow="NombreResponsable" msprop:Generator_ColumnPropNameInTable="NombreResponsableColumn" msprop:Generator_UserColumnName="NombreResponsable">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DPIResponsable" msprop:Generator_ColumnVarNameInTable="columnDPIResponsable" msprop:Generator_ColumnPropNameInRow="DPIResponsable" msprop:Generator_ColumnPropNameInTable="DPIResponsableColumn" msprop:Generator_UserColumnName="DPIResponsable">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Id_EstadoAlumno" msprop:Generator_ColumnVarNameInTable="columnId_EstadoAlumno" msprop:Generator_ColumnPropNameInRow="Id_EstadoAlumno" msprop:Generator_ColumnPropNameInTable="Id_EstadoAlumnoColumn" msprop:Generator_UserColumnName="Id_EstadoAlumno">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Direccion" msprop:Generator_ColumnVarNameInTable="columnDireccion" msprop:Generator_ColumnPropNameInRow="Direccion" msprop:Generator_ColumnPropNameInTable="DireccionColumn" msprop:Generator_UserColumnName="Direccion">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MatriculaEducacion" msprop:Generator_ColumnVarNameInTable="columnMatriculaEducacion" msprop:Generator_ColumnPropNameInRow="MatriculaEducacion" msprop:Generator_ColumnPropNameInTable="MatriculaEducacionColumn" msprop:Generator_UserColumnName="MatriculaEducacion" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Responsable2" msprop:Generator_ColumnVarNameInTable="columnResponsable2" msprop:Generator_ColumnPropNameInRow="Responsable2" msprop:Generator_ColumnPropNameInTable="Responsable2Column" msprop:Generator_UserColumnName="Responsable2" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CelularResp" msprop:Generator_ColumnVarNameInTable="columnCelularResp" msprop:Generator_ColumnPropNameInRow="CelularResp" msprop:Generator_ColumnPropNameInTable="CelularRespColumn" msprop:Generator_UserColumnName="CelularResp" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Nota" msprop:Generator_TableClassName="NotaDataTable" msprop:Generator_TableVarName="tableNota" msprop:Generator_RowChangedName="NotaRowChanged" msprop:Generator_TablePropName="Nota" msprop:Generator_RowDeletingName="NotaRowDeleting" msprop:Generator_RowChangingName="NotaRowChanging" msprop:Generator_RowEvHandlerName="NotaRowChangeEventHandler" msprop:Generator_RowDeletedName="NotaRowDeleted" msprop:Generator_RowClassName="NotaRow" msprop:Generator_UserTableName="Nota" msprop:Generator_RowEvArgName="NotaRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Id_Nota" msprop:Generator_ColumnVarNameInTable="columnId_Nota" msprop:Generator_ColumnPropNameInRow="Id_Nota" msprop:Generator_ColumnPropNameInTable="Id_NotaColumn" msprop:Generator_UserColumnName="Id_Nota">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Nota" msprop:Generator_ColumnVarNameInTable="columnNota" msprop:Generator_ColumnPropNameInRow="Nota" msprop:Generator_ColumnPropNameInTable="NotaColumn" msprop:Generator_UserColumnName="Nota" type="xs:int" />
+              <xs:element name="Zona" msprop:Generator_ColumnVarNameInTable="columnZona" msprop:Generator_ColumnPropNameInRow="Zona" msprop:Generator_ColumnPropNameInTable="ZonaColumn" msprop:Generator_UserColumnName="Zona" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Unidad" msprop:Generator_TableClassName="UnidadDataTable" msprop:Generator_TableVarName="tableUnidad" msprop:Generator_RowChangedName="UnidadRowChanged" msprop:Generator_TablePropName="Unidad" msprop:Generator_RowDeletingName="UnidadRowDeleting" msprop:Generator_RowChangingName="UnidadRowChanging" msprop:Generator_RowEvHandlerName="UnidadRowChangeEventHandler" msprop:Generator_RowDeletedName="UnidadRowDeleted" msprop:Generator_RowClassName="UnidadRow" msprop:Generator_UserTableName="Unidad" msprop:Generator_RowEvArgName="UnidadRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Id_Unidad" msprop:Generator_ColumnVarNameInTable="columnId_Unidad" msprop:Generator_ColumnPropNameInRow="Id_Unidad" msprop:Generator_ColumnPropNameInTable="Id_UnidadColumn" msprop:Generator_UserColumnName="Id_Unidad">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Unidad" msprop:Generator_ColumnVarNameInTable="columnUnidad" msprop:Generator_ColumnPropNameInRow="Unidad" msprop:Generator_ColumnPropNameInTable="UnidadColumn" msprop:Generator_UserColumnName="Unidad">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PromedioGeneral" msprop:Generator_ColumnVarNameInTable="columnPromedioGeneral" msprop:Generator_ColumnPropNameInRow="PromedioGeneral" msprop:Generator_ColumnPropNameInTable="PromedioGeneralColumn" msprop:Generator_UserColumnName="PromedioGeneral" type="xs:decimal" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Usuario" msprop:Generator_TableClassName="UsuarioDataTable" msprop:Generator_TableVarName="tableUsuario" msprop:Generator_RowChangedName="UsuarioRowChanged" msprop:Generator_TablePropName="Usuario" msprop:Generator_RowDeletingName="UsuarioRowDeleting" msprop:Generator_RowChangingName="UsuarioRowChanging" msprop:Generator_RowEvHandlerName="UsuarioRowChangeEventHandler" msprop:Generator_RowDeletedName="UsuarioRowDeleted" msprop:Generator_RowClassName="UsuarioRow" msprop:Generator_UserTableName="Usuario" msprop:Generator_RowEvArgName="UsuarioRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Id_Usuario" msprop:Generator_ColumnVarNameInTable="columnId_Usuario" msprop:Generator_ColumnPropNameInRow="Id_Usuario" msprop:Generator_ColumnPropNameInTable="Id_UsuarioColumn" msprop:Generator_UserColumnName="Id_Usuario">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Nombre" msprop:Generator_ColumnVarNameInTable="columnNombre" msprop:Generator_ColumnPropNameInRow="Nombre" msprop:Generator_ColumnPropNameInTable="NombreColumn" msprop:Generator_UserColumnName="Nombre">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Contrasenia" msprop:Generator_ColumnVarNameInTable="columnContrasenia" msprop:Generator_ColumnPropNameInRow="Contrasenia" msprop:Generator_ColumnPropNameInTable="ContraseniaColumn" msprop:Generator_UserColumnName="Contrasenia">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FechaCreacion" msprop:Generator_ColumnVarNameInTable="columnFechaCreacion" msprop:Generator_ColumnPropNameInRow="FechaCreacion" msprop:Generator_ColumnPropNameInTable="FechaCreacionColumn" msprop:Generator_UserColumnName="FechaCreacion" type="xs:dateTime" />
+              <xs:element name="Id_TipoUsuario" msprop:Generator_ColumnVarNameInTable="columnId_TipoUsuario" msprop:Generator_ColumnPropNameInRow="Id_TipoUsuario" msprop:Generator_ColumnPropNameInTable="Id_TipoUsuarioColumn" msprop:Generator_UserColumnName="Id_TipoUsuario">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Id_RespSeg" msprop:Generator_ColumnVarNameInTable="columnId_RespSeg" msprop:Generator_ColumnPropNameInRow="Id_RespSeg" msprop:Generator_ColumnPropNameInTable="Id_RespSegColumn" msprop:Generator_UserColumnName="Id_RespSeg">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Id_Empleado" msprop:Generator_ColumnVarNameInTable="columnId_Empleado" msprop:Generator_ColumnPropNameInRow="Id_Empleado" msprop:Generator_ColumnPropNameInTable="Id_EmpleadoColumn" msprop:Generator_UserColumnName="Id_Empleado">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Id_EstadoUsuario" msprop:Generator_ColumnVarNameInTable="columnId_EstadoUsuario" msprop:Generator_ColumnPropNameInRow="Id_EstadoUsuario" msprop:Generator_ColumnPropNameInTable="Id_EstadoUsuarioColumn" msprop:Generator_UserColumnName="Id_EstadoUsuario">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Curso" msprop:Generator_TableClassName="CursoDataTable" msprop:Generator_TableVarName="tableCurso" msprop:Generator_TablePropName="Curso" msprop:Generator_RowDeletingName="CursoRowDeleting" msprop:Generator_RowChangingName="CursoRowChanging" msprop:Generator_RowEvHandlerName="CursoRowChangeEventHandler" msprop:Generator_RowDeletedName="CursoRowDeleted" msprop:Generator_UserTableName="Curso" msprop:Generator_RowChangedName="CursoRowChanged" msprop:Generator_RowEvArgName="CursoRowChangeEvent" msprop:Generator_RowClassName="CursoRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Id_Curso" msprop:Generator_ColumnVarNameInTable="columnId_Curso" msprop:Generator_ColumnPropNameInRow="Id_Curso" msprop:Generator_ColumnPropNameInTable="Id_CursoColumn" msprop:Generator_UserColumnName="Id_Curso">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NombreCurso" msprop:Generator_ColumnVarNameInTable="columnNombreCurso" msprop:Generator_ColumnPropNameInRow="NombreCurso" msprop:Generator_ColumnPropNameInTable="NombreCursoColumn" msprop:Generator_UserColumnName="NombreCurso">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Seccion" msprop:Generator_TableClassName="SeccionDataTable" msprop:Generator_TableVarName="tableSeccion" msprop:Generator_RowChangedName="SeccionRowChanged" msprop:Generator_TablePropName="Seccion" msprop:Generator_RowDeletingName="SeccionRowDeleting" msprop:Generator_RowChangingName="SeccionRowChanging" msprop:Generator_RowEvHandlerName="SeccionRowChangeEventHandler" msprop:Generator_RowDeletedName="SeccionRowDeleted" msprop:Generator_RowClassName="SeccionRow" msprop:Generator_UserTableName="Seccion" msprop:Generator_RowEvArgName="SeccionRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Id_Seccion" msprop:Generator_ColumnVarNameInTable="columnId_Seccion" msprop:Generator_ColumnPropNameInRow="Id_Seccion" msprop:Generator_ColumnPropNameInTable="Id_SeccionColumn" msprop:Generator_UserColumnName="Id_Seccion">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Seccion" msprop:Generator_ColumnVarNameInTable="columnSeccion" msprop:Generator_ColumnPropNameInRow="Seccion" msprop:Generator_ColumnPropNameInTable="SeccionColumn" msprop:Generator_UserColumnName="Seccion">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CantidadAlumnos" msprop:Generator_ColumnVarNameInTable="columnCantidadAlumnos" msprop:Generator_ColumnPropNameInRow="CantidadAlumnos" msprop:Generator_ColumnPropNameInTable="CantidadAlumnosColumn" msprop:Generator_UserColumnName="CantidadAlumnos" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Empleado" msprop:Generator_TableClassName="EmpleadoDataTable" msprop:Generator_TableVarName="tableEmpleado" msprop:Generator_TablePropName="Empleado" msprop:Generator_RowDeletingName="EmpleadoRowDeleting" msprop:Generator_RowChangingName="EmpleadoRowChanging" msprop:Generator_RowEvHandlerName="EmpleadoRowChangeEventHandler" msprop:Generator_RowDeletedName="EmpleadoRowDeleted" msprop:Generator_UserTableName="Empleado" msprop:Generator_RowChangedName="EmpleadoRowChanged" msprop:Generator_RowEvArgName="EmpleadoRowChangeEvent" msprop:Generator_RowClassName="EmpleadoRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Id_Empleado" msprop:Generator_ColumnVarNameInTable="columnId_Empleado" msprop:Generator_ColumnPropNameInRow="Id_Empleado" msprop:Generator_ColumnPropNameInTable="Id_EmpleadoColumn" msprop:Generator_UserColumnName="Id_Empleado">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Id_Municipio" msprop:Generator_ColumnVarNameInTable="columnId_Municipio" msprop:Generator_ColumnPropNameInRow="Id_Municipio" msprop:Generator_ColumnPropNameInTable="Id_MunicipioColumn" msprop:Generator_UserColumnName="Id_Municipio">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Nombre1" msprop:Generator_ColumnVarNameInTable="columnNombre1" msprop:Generator_ColumnPropNameInRow="Nombre1" msprop:Generator_ColumnPropNameInTable="Nombre1Column" msprop:Generator_UserColumnName="Nombre1">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Nombre2" msprop:Generator_ColumnVarNameInTable="columnNombre2" msprop:Generator_ColumnPropNameInRow="Nombre2" msprop:Generator_ColumnPropNameInTable="Nombre2Column" msprop:Generator_UserColumnName="Nombre2" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Apellido1" msprop:Generator_ColumnVarNameInTable="columnApellido1" msprop:Generator_ColumnPropNameInRow="Apellido1" msprop:Generator_ColumnPropNameInTable="Apellido1Column" msprop:Generator_UserColumnName="Apellido1">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Apellido2" msprop:Generator_ColumnVarNameInTable="columnApellido2" msprop:Generator_ColumnPropNameInRow="Apellido2" msprop:Generator_ColumnPropNameInTable="Apellido2Column" msprop:Generator_UserColumnName="Apellido2" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DPI" msprop:Generator_ColumnVarNameInTable="columnDPI" msprop:Generator_ColumnPropNameInRow="DPI" msprop:Generator_ColumnPropNameInTable="DPIColumn" msprop:Generator_UserColumnName="DPI">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Edad" msprop:Generator_ColumnVarNameInTable="columnEdad" msprop:Generator_ColumnPropNameInRow="Edad" msprop:Generator_ColumnPropNameInTable="EdadColumn" msprop:Generator_UserColumnName="Edad" type="xs:int" />
+              <xs:element name="Id_Estado" msprop:Generator_ColumnVarNameInTable="columnId_Estado" msprop:Generator_ColumnPropNameInRow="Id_Estado" msprop:Generator_ColumnPropNameInTable="Id_EstadoColumn" msprop:Generator_UserColumnName="Id_Estado">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Direccion" msprop:Generator_ColumnVarNameInTable="columnDireccion" msprop:Generator_ColumnPropNameInRow="Direccion" msprop:Generator_ColumnPropNameInTable="DireccionColumn" msprop:Generator_UserColumnName="Direccion">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Telefono" msprop:Generator_ColumnVarNameInTable="columnTelefono" msprop:Generator_ColumnPropNameInRow="Telefono" msprop:Generator_ColumnPropNameInTable="TelefonoColumn" msprop:Generator_UserColumnName="Telefono">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Celular" msprop:Generator_ColumnVarNameInTable="columnCelular" msprop:Generator_ColumnPropNameInRow="Celular" msprop:Generator_ColumnPropNameInTable="CelularColumn" msprop:Generator_UserColumnName="Celular" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="EstadoEmpleado" msprop:Generator_TableClassName="EstadoEmpleadoDataTable" msprop:Generator_TableVarName="tableEstadoEmpleado" msprop:Generator_TablePropName="EstadoEmpleado" msprop:Generator_RowDeletingName="EstadoEmpleadoRowDeleting" msprop:Generator_RowChangingName="EstadoEmpleadoRowChanging" msprop:Generator_RowEvHandlerName="EstadoEmpleadoRowChangeEventHandler" msprop:Generator_RowDeletedName="EstadoEmpleadoRowDeleted" msprop:Generator_UserTableName="EstadoEmpleado" msprop:Generator_RowChangedName="EstadoEmpleadoRowChanged" msprop:Generator_RowEvArgName="EstadoEmpleadoRowChangeEvent" msprop:Generator_RowClassName="EstadoEmpleadoRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Id_Estado" msprop:Generator_ColumnVarNameInTable="columnId_Estado" msprop:Generator_ColumnPropNameInRow="Id_Estado" msprop:Generator_ColumnPropNameInTable="Id_EstadoColumn" msprop:Generator_UserColumnName="Id_Estado">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Estado" msprop:Generator_ColumnVarNameInTable="columnEstado" msprop:Generator_ColumnPropNameInRow="Estado" msprop:Generator_ColumnPropNameInTable="EstadoColumn" msprop:Generator_UserColumnName="Estado">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="GradoEscolar" msprop:Generator_TableClassName="GradoEscolarDataTable" msprop:Generator_TableVarName="tableGradoEscolar" msprop:Generator_RowChangedName="GradoEscolarRowChanged" msprop:Generator_TablePropName="GradoEscolar" msprop:Generator_RowDeletingName="GradoEscolarRowDeleting" msprop:Generator_RowChangingName="GradoEscolarRowChanging" msprop:Generator_RowEvHandlerName="GradoEscolarRowChangeEventHandler" msprop:Generator_RowDeletedName="GradoEscolarRowDeleted" msprop:Generator_RowClassName="GradoEscolarRow" msprop:Generator_UserTableName="GradoEscolar" msprop:Generator_RowEvArgName="GradoEscolarRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Id_Grado" msprop:Generator_ColumnVarNameInTable="columnId_Grado" msprop:Generator_ColumnPropNameInRow="Id_Grado" msprop:Generator_ColumnPropNameInTable="Id_GradoColumn" msprop:Generator_UserColumnName="Id_Grado">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NombreGrado" msprop:Generator_ColumnVarNameInTable="columnNombreGrado" msprop:Generator_ColumnPropNameInRow="NombreGrado" msprop:Generator_ColumnPropNameInTable="NombreGradoColumn" msprop:Generator_UserColumnName="NombreGrado">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Anio" msprop:Generator_ColumnVarNameInTable="columnAnio" msprop:Generator_ColumnPropNameInRow="Anio" msprop:Generator_ColumnPropNameInTable="AnioColumn" msprop:Generator_UserColumnName="Anio" type="xs:int" />
+              <xs:element name="Id_Empleado" msprop:Generator_ColumnVarNameInTable="columnId_Empleado" msprop:Generator_ColumnPropNameInRow="Id_Empleado" msprop:Generator_ColumnPropNameInTable="Id_EmpleadoColumn" msprop:Generator_UserColumnName="Id_Empleado">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Id_Seccion" msprop:Generator_ColumnVarNameInTable="columnId_Seccion" msprop:Generator_ColumnPropNameInRow="Id_Seccion" msprop:Generator_ColumnPropNameInTable="Id_SeccionColumn" msprop:Generator_UserColumnName="Id_Seccion">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Alumno" />
+      <xs:field xpath="mstns:carne" />
+    </xs:unique>
+    <xs:unique name="Nota_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Nota" />
+      <xs:field xpath="mstns:Id_Nota" />
+    </xs:unique>
+    <xs:unique name="Unidad_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Unidad" />
+      <xs:field xpath="mstns:Id_Unidad" />
+    </xs:unique>
+    <xs:unique name="Usuario_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Usuario" />
+      <xs:field xpath="mstns:Id_Usuario" />
+    </xs:unique>
+    <xs:unique name="Curso_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Curso" />
+      <xs:field xpath="mstns:Id_Curso" />
+    </xs:unique>
+    <xs:unique name="Seccion_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Seccion" />
+      <xs:field xpath="mstns:Id_Seccion" />
+    </xs:unique>
+    <xs:unique name="Empleado_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Empleado" />
+      <xs:field xpath="mstns:Id_Empleado" />
+    </xs:unique>
+    <xs:unique name="EstadoEmpleado_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:EstadoEmpleado" />
+      <xs:field xpath="mstns:Id_Estado" />
+    </xs:unique>
+    <xs:unique name="GradoEscolar_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:GradoEscolar" />
+      <xs:field xpath="mstns:Id_Grado" />
+    </xs:unique>
+  </xs:element>
+  <xs:annotation>
+    <xs:appinfo>
+      <msdata:Relationship name="FK__Empleado__Id_Est__06CD04F7" msdata:parent="EstadoEmpleado" msdata:child="Empleado" msdata:parentkey="Id_Estado" msdata:childkey="Id_Estado" msprop:Generator_UserChildTable="Empleado" msprop:Generator_ChildPropName="GetEmpleadoRows" msprop:Generator_UserRelationName="FK__Empleado__Id_Est__06CD04F7" msprop:Generator_RelationVarName="relationFK__Empleado__Id_Est__06CD04F7" msprop:Generator_UserParentTable="EstadoEmpleado" msprop:Generator_ParentPropName="EstadoEmpleadoRow" />
+      <msdata:Relationship name="FK__GradoEsco__Id_Em__7B5B524B" msdata:parent="Empleado" msdata:child="GradoEscolar" msdata:parentkey="Id_Empleado" msdata:childkey="Id_Empleado" msprop:Generator_UserChildTable="GradoEscolar" msprop:Generator_ChildPropName="GetGradoEscolarRows" msprop:Generator_UserRelationName="FK__GradoEsco__Id_Em__7B5B524B" msprop:Generator_RelationVarName="relationFK__GradoEsco__Id_Em__7B5B524B" msprop:Generator_UserParentTable="Empleado" msprop:Generator_ParentPropName="EmpleadoRow" />
+      <msdata:Relationship name="FK__GradoEsco__Id_Se__0B91BA14" msdata:parent="Seccion" msdata:child="GradoEscolar" msdata:parentkey="Id_Seccion" msdata:childkey="Id_Seccion" msprop:Generator_UserChildTable="GradoEscolar" msprop:Generator_ChildPropName="GetGradoEscolarRows" msprop:Generator_UserRelationName="FK__GradoEsco__Id_Se__0B91BA14" msprop:Generator_RelationVarName="relationFK__GradoEsco__Id_Se__0B91BA14" msprop:Generator_UserParentTable="Seccion" msprop:Generator_ParentPropName="SeccionRow" />
+    </xs:appinfo>
+  </xs:annotation>
+</xs:schema>
